@@ -60,6 +60,7 @@ if (BUILD_FRANKA)
   set(BUILD_TESTS OFF CACHE BOOL "Turn off libfranka tests")
   set(BUILD_EXAMPLES OFF CACHE BOOL "Turn off libfranka examples")
   find_package(Eigen3 REQUIRED)
+  # find_package(pinocchio REQUIRED) # (Audrey) Added for libfranka 0.15.0
 
   set(THREADS_PREFER_PTHREAD_FLAG ON)
   find_package(Threads REQUIRED)

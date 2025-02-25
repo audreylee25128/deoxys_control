@@ -10,4 +10,6 @@ numba
 termcolor
 simplejson
 mujoco==3.1.0
-
+matplotlib # Added by Audrey
+scipy # Added by Audrey
+protobuf==3.20.0 # Added by Audrey

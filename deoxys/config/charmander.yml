@@ -1,10 +1,20 @@
 PC:
   NAME: "DESKTOP-T87ANOJ"
   IP: 192.168.8.194
+<<<<<<< HEAD
+=======
+  # NAME: "rosie"
+  # IP: 172.16.0.1
+>>>>>>> 3f99a3b31ff7169403c0606a58d9c0c9198cf1f9
 
 NUC:
   NAME: "dandy"
   IP: 192.168.8.192
+<<<<<<< HEAD
+=======
+  # NAME: "charmander"
+  # IP: 172.16.0.3
+>>>>>>> 3f99a3b31ff7169403c0606a58d9c0c9198cf1f9
   PUB_PORT: 5556
   SUB_PORT: 5555
   GRIPPER_PUB_PORT: 5558
@@ -12,6 +22,10 @@ NUC:
 
 ROBOT:
   IP: 192.168.1.11
+<<<<<<< HEAD
+=======
+  # IP: 172.16.0.2
+>>>>>>> 3f99a3b31ff7169403c0606a58d9c0c9198cf1f9
 
 CONTROL:
   STATE_PUBLISHER_RATE: 100

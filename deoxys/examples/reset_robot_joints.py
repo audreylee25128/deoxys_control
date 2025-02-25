@@ -43,22 +43,23 @@ def main():
     controller_type = "JOINT_POSITION"
 
     # Golden resetting joints
-    reset_joint_positions = [
-        0.09162008114028396,
-        -0.19826458111314524,
-        -0.01990020486871322,
-        -2.4732269941140346,
-        -0.01307073642274261,
-        2.30396583422025,
-        0.8480939705504309,
-    ]
+    # reset_joint_positions = [
+    #     0.09162008114028396,
+    #     -0.19826458111314524,
+    #     -0.01990020486871322,
+    #     -2.4732269941140346,
+    #     -0.01307073642274261,
+    #     2.30396583422025,
+    #     0.8480939705504309,
+    # ]
+    reset_joint_positions = [0., -0.78539816, 0., -2.35619449, 0., 1.57079633, 0.78539816]
 
-    # This is for varying initialization of joints a little bit to
-    # increase data variation.
-    reset_joint_positions = [
-        e + np.clip(np.random.randn() * 0.005, -0.005, 0.005)
-        for e in reset_joint_positions
-    ]
+    # # This is for varying initialization of joints a little bit to
+    # # increase data variation.
+    # reset_joint_positions = [
+    #     e + np.clip(np.random.randn() * 0.005, -0.005, 0.005)
+    #     for e in reset_joint_positions
+    # ]
     action = reset_joint_positions + [-1.0]
 
     while True:
